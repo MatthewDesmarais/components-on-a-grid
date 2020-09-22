@@ -12,6 +12,13 @@ html {
   margin: 0;
 }
 
+header {
+  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
