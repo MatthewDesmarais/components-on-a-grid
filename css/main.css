@@ -1,18 +1,54 @@
 html {
   box-sizing: border-box;
+  font-family: Georga, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  margin: 0;
 }
 
 img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   width: 100%;
 }
+
+h1 {
+  z-index: 1;
+  margin-bottom: 0;
+  max-width: 14rem;
+  padding-right: 2rem;
+}
+
+.pano {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax())
+}
+
+.logo {
+  display: inline;
+  position: justify;
+}
+
+.banner
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+li {
+  float: right;
+}
+
+a {
+  display: inline-block;
+  padding: 8px;
+  background-color: #dddddd;
 }
