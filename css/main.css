@@ -44,6 +44,15 @@ p {
   margin-bottom: 1em;
 }
 
+.logo {
+  z-index: 2;
+  grid-area: header;
+  grid-row: 2;
+  grid-column: 1;
+  width: 14rem;
+  padding: 0 0 0 1rem;
+}
+
 .pano {
   grid-area: header;
   grid-column: 1 / span 2;
