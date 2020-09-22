@@ -12,16 +12,27 @@ html {
   margin: 0;
 }
 
+body {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "header header"
+    "figure figure";
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr;
+  background-color: #f2f1ed;
+}
+
 header {
   display: contents;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-area: header;
+  padding: 0;
+  margin: 1rem;
 }
 
 img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
   width: 100%;
 }
 
