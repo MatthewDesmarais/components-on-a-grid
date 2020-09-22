@@ -44,6 +44,12 @@ p {
   grid-template-columns: repeat(auto-fit, minmax())
 }
 
+nav {
+  padding-right: 1rem;
+  grid-column: 3 / -1;
+  grid-row: 1;
+}
+
 .logo {
   display: inline;
   position: justify;
