@@ -41,40 +41,33 @@ h2{
 
 p {
   margin: 0;
-  font-size: .5em;
   margin-bottom: 1em;
 }
 
 .pano {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax())
+  grid-area: header;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  z-index: 1;
 }
 
 nav {
-  padding-right: 1rem;
-  grid-column: 3 / -1;
+  z-index: 3;
   grid-row: 1;
+  grid-column: 2;
 }
 
-.logo {
-  display: inline;
-  position: justify;
+li a {
+  color: #fff;
 }
 
-.banner
-
-header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
+main {
+  display: grid;
+  display: flex;
+  grid-template-areas: "area1 area2";
+  padding: 0;
 }
 
-li {
-  float: right;
-}
-
-a {
-  display: inline-block;
-  padding: 8px;
-  background-color: #dddddd;
+figure {
+   margin: .5rem;
 }
