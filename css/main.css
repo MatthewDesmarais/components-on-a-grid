@@ -32,7 +32,11 @@ h2{
   font-size: .75em;
 }
 
-
+p {
+  margin: 0;
+  font-size: .5em;
+  margin-bottom: 1em;
+}
 
 .pano {
   width: 100%;
